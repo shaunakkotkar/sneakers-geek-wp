@@ -20,16 +20,16 @@
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'sneaker_dbs' );
+define( 'DB_NAME', 'sneaker_database' );
 
 /** Database username */
 define( 'DB_USER', 'admin' );
 
 /** Database password */
-define( 'DB_PASSWORD', 'password' );
+define( 'DB_PASSWORD', '12345678' );
 
 /** Database hostname */
-define( 'DB_HOST', 'sneaker-dbs.c0iietyzpm5t.us-west-1.rds.amazonaws.com' );
+define( 'DB_HOST', 'sneaker-database.c0y0nzv8ci59.ap-south-1.rds.amazonaws.com' );
 
 /** Database charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );
