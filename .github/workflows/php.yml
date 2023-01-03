@@ -15,5 +15,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Build the Docker image
-      run: docker build -t sneaker .
+    - name: docker build -t site .
+      run: docker build -t sneakers .
+      run: aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws/s4b3x4e9
+      run: docker tag sneakers:latest public.ecr.aws/s4b3x4e9/sneakers:latest
+      run: docker push public.ecr.aws/s4b3x4e9/sneakers:latest
